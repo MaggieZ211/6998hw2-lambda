@@ -19,7 +19,7 @@ Resources:
             Bucket:
               Ref: IndexBucket2
             Events:
-              - 's3:ObjectCreated:Put'
+              - 's3:ObjectCreated:Get'
   IndexBucket2:
     Type: 'AWS::S3::Bucket'
   SearchLambda:
